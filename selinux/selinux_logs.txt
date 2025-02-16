@@ -1,0 +1,19 @@
+----
+time->Sun Feb 16 02:29:53 2025
+type=USER_AUTH msg=audit(1739690993.224:157): pid=1838 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:xdm_t:s0-s0:c0.c1023 msg='op=PAM:authentication grantors=pam_permit acct="liveuser" exe="/usr/libexec/gdm-session-worker" hostname=localhost-live addr=? terminal=/dev/tty1 res=success'
+----
+time->Sun Feb 16 03:13:28 2025
+type=USER_AUTH msg=audit(1739693608.574:297): pid=41040 uid=1000 auid=1000 ses=2 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:authentication grantors=pam_unix acct="liveuser" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+----
+time->Sun Feb 16 03:23:04 2025
+type=USER_AUTH msg=audit(1739694184.893:365): pid=41629 uid=1000 auid=1000 ses=2 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:authentication grantors=pam_unix acct="liveuser" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/1 res=success'
+----
+time->Sun Feb 16 07:29:45 2025
+type=PROCTITLE msg=audit(1739708985.072:96): proctitle="/usr/lib/systemd/systemd-homed"
+type=SYSCALL msg=audit(1739708985.072:96): arch=c000003e syscall=137 success=no exit=-13 a0=7fd56d739b60 a1=7ffe06448a80 a2=11 a3=55e4062f5d50 items=0 ppid=1 pid=1306 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="systemd-homed" exe="/usr/lib/systemd/systemd-homed" subj=system_u:system_r:systemd_homed_t:s0 key=(null)
+type=AVC msg=audit(1739708985.072:96): avc:  denied  { getattr } for  pid=1306 comm="systemd-homed" name="/" dev="tmpfs" ino=1 scontext=system_u:system_r:systemd_homed_t:s0 tcontext=system_u:object_r:tmpfs_t:s0 tclass=filesystem permissive=0
+----
+time->Sun Feb 16 07:29:45 2025
+type=PROCTITLE msg=audit(1739708985.076:97): proctitle="/usr/lib/systemd/systemd-homed"
+type=SYSCALL msg=audit(1739708985.076:97): arch=c000003e syscall=257 success=no exit=-13 a0=ffffff9c a1=55e3feb9405e a2=90800 a3=0 items=0 ppid=1 pid=1306 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="systemd-homed" exe="/usr/lib/systemd/systemd-homed" subj=system_u:system_r:systemd_homed_t:s0 key=(null)
+type=AVC msg=audit(1739708985.076:97): avc:  denied  { read } for  pid=1306 comm="systemd-homed" name="home" dev="overlay" ino=299 scontext=system_u:system_r:systemd_homed_t:s0 tcontext=system_u:object_r:var_t:s0 tclass=dir permissive=0

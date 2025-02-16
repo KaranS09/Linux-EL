@@ -1,0 +1,8 @@
+module custom_policy 1.0;
+
+require {
+    type user_home_t;
+    class file { read write };
+}
+
+allow user_home_t self:file { read write };

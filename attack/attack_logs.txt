@@ -1,0 +1,15 @@
+Feb 16 02:29:12 fedora kernel: RETBleed: WARNING: Spectre v2 mitigation leaves CPU vulnerable to RETBleed attacks, data leaks possible!
+Feb 16 02:29:12 fedora systemd[1]: Invalid DMI field header.
+Feb 16 02:29:14 fedora kernel: vmwgfx 0000:00:02.0: [drm] *ERROR* vmwgfx seems to be running on an unsupported hypervisor.
+Feb 16 02:29:14 fedora kernel: vmwgfx 0000:00:02.0: [drm] *ERROR* This configuration is likely broken.
+Feb 16 02:29:14 fedora kernel: vmwgfx 0000:00:02.0: [drm] *ERROR* Please switch to a supported graphics device to avoid problems.
+Feb 16 07:29:41 fedora systemd[1]: Invalid DMI field header.
+Feb 16 07:29:42 fedora systemd-udevd[1144]: /usr/lib/udev/rules.d/61-gdm.rules:41 GOTO="gdm_hybrid_nvidia_laptop_check" has no matching label, ignoring.
+Feb 16 07:29:43 fedora (udev-worker)[1148]: vboxguest: /usr/lib/udev/rules.d/60-vboxguest.rules:1 Only network interfaces can be renamed, ignoring NAME="vboxguest".
+Feb 16 07:29:43 fedora (udev-worker)[1157]: vboxuser: /usr/lib/udev/rules.d/60-vboxguest.rules:2 Only network interfaces can be renamed, ignoring NAME="vboxuser".
+Feb 16 07:29:45 fedora systemd-homed[1306]: Failed to open /var/cache/systemd/home/: Permission denied
+Feb 16 07:29:45 fedora alsactl[1347]: /usr/sbin/alsactl: load_state:1689: Cannot open /var/lib/alsa/asound.state for reading: No such file or directory
+Feb 16 07:29:45 fedora alsactl[1347]: alsa-lib main.c:1554:(snd_use_case_mgr_open) error: failed to import hw:0 use case configuration -2
+Feb 16 02:29:53 localhost-live virtqemud[1729]: Unable to open /dev/kvm: No such file or directory
+Feb 16 02:29:54 localhost-live gdm[1756]: Gdm: on_display_added: assertion 'GDM_IS_REMOTE_DISPLAY (display)' failed
+Feb 16 02:29:54 localhost-live gdm[1756]: Gdm: on_display_removed: assertion 'GDM_IS_REMOTE_DISPLAY (display)' failed
